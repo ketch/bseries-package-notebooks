@@ -1,6 +1,7 @@
 # Computing with B-Series
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/429305906.svg)](https://zenodo.org/badge/latestdoi/429305906)
 
 This repository contains some code used in the forthcoming article "Computing with B-Series", by David I. Ketcheson and Hendrik Ranocha.
 
