@@ -13,8 +13,19 @@ and associated concepts and provide examples of their use, including method comp
 and backward error analysis.  The associated software is highly performant
 and makes it possible to work with B-series of high order.
 
-If you find these results useful, please cite the article mentioned above.  If you
-use the implementations provided here, please *also* cite this repository as
+If you find these results useful, please cite the article mentioned above as
+```bibtex
+@online{ketcheson2021computing,
+  title={Computing with {B}-series},
+  author={Ketcheson, David I and Ranocha, Hendrik},
+  year={2021},
+  month={11},
+  eprint={2111.11680},
+  eprinttype={arXiv},
+  eprintclass={math.NA}
+}
+```
+If you use the implementations provided here, please *also* cite this repository as
 ```bibtex
 @misc{ketcheson2021bseriesRepro,
   title={{bseries-package-notebooks}.
