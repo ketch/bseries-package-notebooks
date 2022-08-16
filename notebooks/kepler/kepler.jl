@@ -57,6 +57,7 @@ end
 
 # Compute B-series of the numerical integrator and the modifying integrator
 truncation_order = 4
+series_integrator = bseries(ark, truncation_order)
 series = modifying_integrator(f_sym, u_sym, dt_sym, series_integrator)
 
 println("Modifying integrator equation for ", u_sym[1], ":")
