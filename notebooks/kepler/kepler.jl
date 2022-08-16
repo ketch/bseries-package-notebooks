@@ -44,8 +44,19 @@ f_p_sym = [0, 0, f_p(q_sym, p_sym)...]
 f_sym = (f_q_sym, f_p_sym)
 
 # Compute B-series of the numerical integrator and the modified equation
-truncation_order = 4
+truncation_order = 8
 series_integrator = bseries(ark, truncation_order)
+series = modified_equation(f_sym, u_sym, dt_sym, series_integrator);
+
+# check that it contains no terms proportional to odd powers of h:
+println("Modified equation terms with odd powers of h:")
+expr = SymPy.collect(series[1],dt_sym)
+for j in 0:3
+    println(expr.coeff(dt_sym,2*j+1), " ", dt_sym^(2*j+1))
+end
+
+# Compute B-series of the numerical integrator and the modifying integrator
+truncation_order = 4
 series = modifying_integrator(f_sym, u_sym, dt_sym, series_integrator)
 
 println("Modifying integrator equation for ", u_sym[1], ":")
