@@ -37,4 +37,4 @@ end
 
 println()
 println("LaTeX code of the modified equation:")
-println(latexify(meq, cdot=false))
+println(latexify(meq, reduce_order_by=1, cdot=false))
