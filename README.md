@@ -3,9 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-success.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/429305906.svg)](https://zenodo.org/badge/latestdoi/429305906)
 
-This repository contains some code used in the forthcoming article "Computing with B-Series", by David I. Ketcheson and Hendrik Ranocha.
+This repository contains some code used in the article "Computing with B-Series", by David I. Ketcheson and Hendrik Ranocha.
 
-> We present BSeries.jl, a Julia package for the computation and manipulation of B-series, which are a
+> We present [BSeries.jl](https://github.com/ranocha/BSeries.jl), 
+a Julia package for the computation and manipulation of B-series, which are a
 versatile theoretical tool for understanding and designing discretizations of
 differential equations.
 We give a short introduction to the theory of B-series
@@ -15,11 +16,13 @@ and makes it possible to work with B-series of high order.
 
 If you find these results useful, please cite the article mentioned above as
 ```bibtex
-@online{ketcheson2021computing,
+@article{ketcheson2022computing,
   title={Computing with {B}-series},
   author={Ketcheson, David I and Ranocha, Hendrik},
-  year={2021},
-  month={11},
+  journal={ACM Transactions on Mathematical Software},
+  year={2022},
+  month={12},
+  doi={10.1145/3573384},
   eprint={2111.11680},
   eprinttype={arXiv},
   eprintclass={math.NA}
